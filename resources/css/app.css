@@ -1,0 +1,488 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* profile index.blade.php */
+.body {
+    margin: 2vw 25vw 2vw 25vw;
+}
+
+.username {
+    font-size: 4vw;
+    margin: 0 0 0.1vw 0;
+}
+
+.link {
+    font-size: 1.25vw;
+    margin: 0 0.5vw 0 0;
+}
+
+.link-comment {
+    font-size: 1.25vw;
+    margin: 0 0.5vw 0 0;
+}
+
+.link-comment:hover {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* post */
+
+.post {
+    margin: 3vw 0 0 0;
+}
+
+.title {
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.the-border {
+    background-color: black;
+    width: auto;
+    height: 0.15vw;
+}
+
+.thought {
+    margin: 2vw 0 2vw 0;
+    width: auto;
+    height: auto;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+}
+
+.post-info {
+    display: flex;
+}
+
+.post-user {
+    font-size: 1.5vw;
+}
+
+.date {
+    font-size: 1vw;
+    opacity: 0.5;
+    padding: 0.35vw 0 0 1vw;
+}
+
+.image {
+    width: auto;
+    height: auto;
+    border-radius: 0.25vw;
+}
+
+.caption {
+    font-size: 1.25vw;
+    margin: 0.5vw 0 0 0;
+}
+
+.delete-button {
+    font-size: 1.25vw;
+    margin: 0.25vw 0 0 0;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+/* create post form create.blade.php */
+.form {
+    width: 50vw;
+    margin: 5vw 25vw 0 25vw;
+}
+
+.input {
+    width: 50vw;
+    margin-bottom: 1vw;
+}
+
+.option {
+    display: flex;
+    margin: 0.5vw 0 0 0;
+}
+
+.button-a {
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    font-size: 1.1vw;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    margin: 0vw 0 0 0;
+    transition: 0.5s all ease-in-out;
+    border: none;
+}
+
+.button-a:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+.button-b {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-align: center;
+    line-height: 3vw;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 0.5vw;
+    margin: 0vw 1vw 0 0;
+    transition: 0.5s all ease-in-out;
+    font-size: 1.25vw;
+}
+
+.button-b:hover {
+    background-color: #474747;
+    transition: 0.5s all ease-in-out;
+}
+
+/* comment */
+.comment-container {
+    margin: 2.5vw 25vw 2.5vw 25vw;
+}
+
+.comment-form {
+    margin: 0 0 2vw 0;
+}
+
+.title-comment-form {
+    font-size: 2vw;
+}
+
+.comment-input {
+    width: 50vw;
+    height: auto;
+    font-size: 1.25vw;
+    margin: 0 0 1vw 0;
+}
+
+.comment-title {
+    font-size: 2vw;
+}
+
+.comment {
+    width: 50vw;
+    margin: 2vw 0 2vw 0;
+    padding: 1vw;
+    box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+    border-radius: 0.5vw;
+    font-size: 1.25vw;
+}
+
+/* search */
+.user-showed {
+    margin: 1.5vw 25vw 1.5vw 25vw;
+    font-size: 1.5vw;
+}
+
+.user-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+    /* profile index.blade.php */
+    .body {
+        margin: 2vw 5vw 2vw 5vw;
+    }
+
+    .username {
+        font-size: 8vw;
+        margin: 0 0 0.1vw 0;
+    }
+
+    .link {
+        font-size: 3vw;
+        margin: 0 0.5vw 0 0;
+    }
+
+    .link-comment {
+        font-size: 3vw;
+        margin: 1.5vw 0 0 0;
+    }
+
+    /* post */
+    .post {
+        margin: 3vw 0 0 0;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .the-border {
+        width: auto;
+        height: 0.2vw;
+    }
+
+    .thought {
+        margin: 2vw 0 2vw 0;
+        padding: 2vw;
+    }
+
+    .post-info {
+        display: flex;
+    }
+
+    .post-user {
+        font-size: 4vw;
+    }
+
+    .date {
+        font-size: 2.5vw;
+        opacity: 0.5;
+        padding: 1vw 0 0 1vw;
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        border-radius: 0.25vw;
+    }
+
+    .caption {
+        font-size: 3vw;
+        margin: 1vw 0 0 0;
+    }
+
+    .delete-button {
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    /* create post form create.blade.php */
+    .form {
+        width: 90vw;
+        margin: 5vw 5vw 0 5vw;
+    }
+
+    .input {
+        width: 90vw;
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .option {
+        display: flex;
+    }
+
+    .button-a {
+        font-size: 2.5vw;
+        width: 20vw;
+        height: 7vw;
+        border-radius: 0.5vw;
+        margin: 0vw 0 0 0;
+        border: none;
+    }
+
+    .button-b {
+        line-height: 7vw;
+        width: 20vw;
+        height: 7vw;
+        border-radius: 0.5vw;
+        margin: 0vw 2vw 0 0;
+        font-size: 2.5vw;
+    }
+
+    /* comment */
+    .comment-container {
+        margin: 2.5vw 5vw 2.5vw 5vw;
+    }
+
+    .comment-form {
+        margin: 0 0 2vw 0;
+    }
+
+    .title-comment-form {
+        font-size: 3vw;
+    }
+
+    .comment-input {
+        width: 90vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin: 0 0 0.25vw 0;
+    }
+
+    .comment-title {
+        font-size: 3vw;
+        margin: 4vw 0 0 0;
+    }
+
+    .comment {
+        width: 90vw;
+        margin: 2vw 0 5vw 0;
+        padding: 2vw;
+        box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+
+    /* search */
+    .user-showed {
+        margin: 1vw 5vw 1vw 5vw;
+        padding: 2vw 0 2vw 0;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 1024px) and (orientation: portrait) {
+
+    /* profile index.blade.php */
+    .body {
+        margin: 2vw 5vw 2vw 5vw;
+    }
+
+    .username {
+        font-size: 8vw;
+        margin: 0 0 0.1vw 0;
+    }
+
+    .link {
+        font-size: 3vw;
+        margin: 0 0.5vw 0 0;
+    }
+
+    .link-comment {
+        font-size: 3vw;
+        margin: 0.05vw 0 0 0;
+    }
+
+    /* post */
+    .post {
+        margin: 3vw 0 0 0;
+    }
+
+    .title {
+        font-size: 5vw;
+    }
+
+    .the-border {
+        width: auto;
+        height: 0.2vw;
+    }
+
+    .thought {
+        margin: 2vw 0 2vw 0;
+        padding: 2vw;
+    }
+
+    .post-info {
+        display: flex;
+    }
+
+    .post-user {
+        font-size: 4vw;
+    }
+
+    .date {
+        font-size: 2.5vw;
+        opacity: 0.5;
+        padding: 1vw 0 0 1vw;
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        border-radius: 0.25vw;
+    }
+
+    .caption {
+        font-size: 3vw;
+        margin: 1vw 0 0 0;
+    }
+
+    .delete-button {
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    /* create post form create.blade.php */
+    .form {
+        width: 90vw;
+        margin: 5vw 5vw 0 5vw;
+    }
+
+    .input {
+        width: 90vw;
+        font-size: 3.5vw;
+        margin-bottom: 3vw;
+    }
+
+    .option {
+        display: flex;
+    }
+
+    .button-a {
+        font-size: 2.5vw;
+        width: 20vw;
+        height: 7vw;
+        border-radius: 0.5vw;
+        margin: 0vw 0 0 0;
+        border: none;
+    }
+
+    .button-b {
+        line-height: 7vw;
+        width: 20vw;
+        height: 7vw;
+        border-radius: 0.5vw;
+        margin: 0vw 2vw 0 0;
+        font-size: 2.5vw;
+    }
+
+    /* comment */
+    .comment-container {
+        margin: 2.5vw 5vw 2.5vw 5vw;
+    }
+
+    .comment-form {
+        margin: 0 0 2vw 0;
+    }
+
+    .title-comment-form {
+        font-size: 3vw;
+    }
+
+    .comment-input {
+        width: 90vw;
+        height: 6vw;
+        font-size: 3vw;
+        margin: 0 0 0.25vw 0;
+    }
+
+    .comment-title {
+        font-size: 3vw;
+        margin: 4vw 0 0 0;
+    }
+
+    .comment {
+        width: 90vw;
+        margin: 2vw 0 5vw 0;
+        padding: 2vw;
+        box-shadow: 0 0 1vw 0.5vw #B5B5B5;
+        border-radius: 0.5vw;
+        font-size: 3vw;
+    }
+
+    /* search */
+    .user-showed {
+        margin: 1vw 5vw 1vw 5vw;
+        padding: 2vw 0 2vw 0;
+        font-size: 4vw;
+    }
+}
