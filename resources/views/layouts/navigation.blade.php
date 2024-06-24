@@ -73,7 +73,7 @@
             <x-responsive-nav-link :href="route('home.index')" :active="request()->routeIs('dashboard')">
                 {{ __('Home') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link :href="route('home.index')" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link :href="route('search')" :active="request()->routeIs('dashboard')">
                 {{ __('Search') }}
             </x-responsive-nav-link>
         </div>
